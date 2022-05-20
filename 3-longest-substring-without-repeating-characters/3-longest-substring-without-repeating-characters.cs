@@ -7,8 +7,8 @@ public class Solution
             return s.Length;
         int max = 0, c = 1;
         string s2;
-        if (s.Length > 2000)
-            s = s.Substring(0, 2000);
+        if (s.Length > 1000)
+            s = s.Substring(0, 1000);
         for (int i = 0; i < s.Length; i++)
         {
             for (int j = i ; j < s.Length; j++)
