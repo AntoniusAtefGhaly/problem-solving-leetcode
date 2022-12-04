@@ -5,11 +5,11 @@ public class Solution {
         int l=0,r=size-1;
         int m=l+(r-l)/2;
         
-        if (size==1)
-        {
-            if(nums[0]==target)
-                return 0;
-        }
+        // if (size==1)
+        // {
+        //     if(nums[0]==target)
+        //         return 0;
+        // }
         while(l<=r){
             if(target==nums[m]){
                 return m;
