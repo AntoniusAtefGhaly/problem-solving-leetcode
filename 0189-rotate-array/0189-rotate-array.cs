@@ -1,7 +1,7 @@
 public class Solution {
     public void Rotate(int[] nums, int k) {
-        while(k>nums.Length)
-            k-=nums.Length;
+ 
+            k=k%nums.Length;
         int new_index;
         int[] nums_new=new int[nums.Length];
         for(int i=0;i<nums.Length;i++){
