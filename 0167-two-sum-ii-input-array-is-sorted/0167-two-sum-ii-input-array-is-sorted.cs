@@ -20,6 +20,6 @@ public class Solution {
                 }
             }
         }
-        return new int[]{5,5};
+        return new int[]{1,1};
     }
 }
