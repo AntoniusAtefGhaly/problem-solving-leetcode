@@ -9,25 +9,45 @@
  *     }
  * }
  */
+
+
+/*************sol 1****************/
+// public class Solution {
+//     public ListNode MiddleNode(ListNode head) {
+        
+//         int i=0;
+//         ListNode node=head;
+//         while(node.next!=null){
+//             node=node.next;
+//             i++;
+//         }
+// //     return node; 
+//        Console.WriteLine(i);
+//         int middle=(i+1)/2;
+//         i=0;
+//         node=head;
+//         while(i<middle)
+//         {
+//             node=node.next;
+//             i++;
+//         }
+//         return node;
+//     }
+// }
+
+
+/**********************sol 2*****************************/
 public class Solution {
     public ListNode MiddleNode(ListNode head) {
         
-        int i=0;
-        ListNode node=head;
-        while(node.next!=null){
-            node=node.next;
-            i++;
+        ListNode m=head,l=head;
+
+        while((l!=null) &&( l.next!=null)){            
+            m=m.next;
+            l=l.next.next;
         }
-//     return node; 
-       Console.WriteLine(i);
-        int middle=(i+1)/2;
-        i=0;
-        node=head;
-        while(i<middle)
-        {
-            node=node.next;
-            i++;
-        }
-        return node;
+        // if(l.next!=null)
+        //     m= m.next;
+        return m;
     }
 }
